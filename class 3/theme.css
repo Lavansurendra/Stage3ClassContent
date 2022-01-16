@@ -1,0 +1,7 @@
+#redbackgrounddiv{
+   position: absolute;
+   right: 50%;
+   width: 100px;
+   height:100px;
+   background-color: red;
+}
