@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <h1 style="font-size: 100px;color: purple">MY FIRST WEBPAGE, with JavaScript</h1>
+    <p style="font-size: 50px" id="myPara"> We are starting to learn JavaScript</p>
+     <button style="font-size: 50px;color: blue" onclick="DoThisOnClick()"> CLICK ME </button> 
+     <button style="font-size: 50px;color: blue" onclick="DoThisOnDblClick()"> DOUBLE CLICK ME </button>
+    <script>
+        // function notation is different from javascript and python! get used to this in javascript
+        function DoThisOnClick(){
+            // alerts a message to the page 
+            alert("BUTTON CLICKED");
+            //posts message to a console 
+            console.log("The button was clicked");
+            //All elements are a child of the document when we use the . on an element we can use that to apply functions to a specific element
+            // Just like with classes we can affect elements using their id tag.
+            document.getElementById("myPara").innerHTML = "Hi my name is Lavan";
+        }
+
+        function DoThisOnDblClick(){
+            //another alert to post message to the page
+            alert("Button Double Clicked");
+            //JavaScript can impact style and many other elements as well! 
+            document.getElementById("myPara").style.color = "orange";
+            // Like in python JavaScript can be used to make variables and perform arithmitic 
+            a = 10;
+            b = 15;
+            c = a+b;
+            console.log(c)
+        }
+    
+    </script>
+</body>
+
+</html>
