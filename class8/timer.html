@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timer</title>
+</head>
+    <script>
+        function endTime(){
+            document.getElementById("timerp").innerHTML = "Time Over"
+        }
+        function Timer(){ 
+            const stopTime = setTimeout(endTime, 5000);
+        }
+    </script>
+<body>
+    <p id="timerp">"playing or not playing"</p>
+    <button onclick="Timer()">Timer</button>   
+</body>
+</html>
