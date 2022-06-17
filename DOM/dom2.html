@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- <div class = "contents">
+        <ul class = "book">
+            <li class = "chapter" id = "chp1">1</li>
+            <li class = "chapter" id = "chp1">2</li>
+        </ul>
+    </div> -->
+
+<div id = "elem" about = "elephant"></div>
+
+<script> 
+    // let chapters = document.querySelectorAll(".chapter");
+    // for(let i = 0; i < chapters.length; i++){
+    //     alert(chapters[i])
+    // }
+    // let chapid = document.getElementById("chp1")
+    // alert(chapid.innerHTML)
+    
+    elem = document.getElementById("elem")
+    alert(elem.getAttribute('about')) // reading 
+    elem.setAttribute ('Test', 123) //writing 
+
+    alert(elem.outerHTML) // alert if the attribute is in the html
+    for(let attribute of elem.attributes){
+        alert(attribute.value)
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+canvas {
+    width: 400px;
+    height: 400px;
+    position:absolute; 
+    top: 200px;
+    left: 250px;
+    /* background-color: aliceblue; */
+}

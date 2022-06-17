@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    //Syntax for making an object
+    let car1 = new Object(); 
+    let car = { 
+    colour: "blue",
+    model: "X",
+    brand: "Tesla",
+    };
+
+//    let key = prompt("What do you want to know about the car?", "colour");
+//    alert(car2[key]);
+    // let key = prompt("What information do you want to add to the car");
+    // let value = prompt("What is the actual answer to the information added above?")
+    // car[key]= value;
+
+    function makeLaptop(brand,size){
+        return{
+            brand:brand,
+            size:size,
+        };
+    }
+
+    let laptop = makeLaptop("Acer","15 inches");
+    // alert(laptop.brand);
+    // alert("brand" in laptop);
+    // alert("name" in laptop);
+    laptop.colour = "black";
+
+    for(let key in laptop){
+        alert(key +", "+ laptop[key]);
+    }
+
+</script>
+
+<body>
+    
+</body>
+</html>
