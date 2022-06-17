@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .message{
+            padding: 15px;
+            border: 1px solid red;
+            border-radius: 4px;
+            color: blue;
+            background-color: yellow;
+            width: 100px;
+        }
+    </style>
+    <script>
+        let div = document.createElement('div')
+        div.className = "message"
+        div.innerHTML = "<strong> Hi, how are you </strong> You've read an important message."
+        document.body.append(div)
+
+    </script>
+
+
+</body>
+</html>
